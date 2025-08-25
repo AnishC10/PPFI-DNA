@@ -1,7 +1,7 @@
 # Privacy Preserving Federated Inference for Genomic Analysis with Homomorphic Encryption
 
 ## Overview
-This work presents the first full framework linking **fully homomorphic encryption** with **federated analytics**, in the context of DNA nucleotide data. Users can train using the code in this repository, then perform inference. 
+This work presents the first full framework linking **fully homomorphic encryption** with **federated analytics**, in the context of DNA nucleotide data. Users can train using the code in this repository, then perform encrypted inference. 
 
 ## Usage
 
