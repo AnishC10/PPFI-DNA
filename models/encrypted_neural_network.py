@@ -359,8 +359,13 @@ if __name__ == "__main__":
     except RuntimeError:
         pass
 
-    X_train, y_train = preprocess_data("train_cvi_padded.csv", k=4)
-    X_test,  y_test  = preprocess_data("test_cvi_padded.csv",  k=4)
+    data = input("Choose Dataset: Promoters or CVI?")
+    if (data == "Promoters" || data == "promoters"):
+      X_train, y_train = preprocess_data("data_padded.csv", k=4)
+      X_test,  y_test  = preprocess_data("test_data_padded.csv",  k=4)
+    elif (data == "CVI" || data == "cvi"):
+      X_train, y_train = preprocess_data("train_cvi_padded.csv", k=4)
+      X_test,  y_test  = preprocess_data("test_cvi_padded.csv",  k=4)
 
     fed_learning = FederatedLearning(
         num_clients=5,
