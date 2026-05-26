@@ -16,16 +16,21 @@ The preprint can be accessed [here](https://ia.cr/2025/1515). The citation infor
 ```
 ## Usage
 
-The scripts and data provided in this repository allow viewers to replicate the findings found in our paper (preprint coming soon!).
+The scripts and data provided in this repository allow viewers to replicate the findings found in our paper.
 
 ### Cloning, Training (on your local machine):
 
 ```
 git clone https://github.com/AnishC10/PPFI-DNA.git
 cd PPFI-DNA
+git lfs install
+git lfs pull
 pip3 install -r requirements.txt
 cd models
-python3 encrypted_neural_network.py
+cd [TFHE, CKKS]
+python3 [MODEL].py
 ```
-This will begin training and testing on the data in ```data.csv```, and then output the resulting statistics.   
+Once you finish the final step, a dialogue will appear in the terminal, asking which dataset you would like to run on. If you respond with "Promoters" (or "promoters"), the promoter dataset will automatically be used. If you respond with "CVI," the CVI dataset will automatically be used. 
+
+It is **highly** recommended to utilize an external server, rather than a local machine to run these programs.
 
