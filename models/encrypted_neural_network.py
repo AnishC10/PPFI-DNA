@@ -385,5 +385,3 @@ if __name__ == "__main__":
     print(f"  Recall            : {recall_score(y_true, preds, zero_division=0):.4f}")
     print(f"  Confusion Matrix  :\n{confusion_matrix(y_true, preds)}")
     print("="*50)
-    print("(ROC-AUC and PR-AUC reported from plaintext evaluation per epoch above;")
-    print(" encrypted inference returns binary predictions only.)")
